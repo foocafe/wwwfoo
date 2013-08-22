@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load webdesign %}
+{% block title %}FooCafé{% endblock %}
+{% block fbmeta %}
+<!-- No FB meta data here -->
+{% endblock %}
+{% block script %}
+<script type="text/javascript">
+    $(function(){
+        $('.indexwide').columnize({ columns: 3 });
+        //$('.eventwide').columnize({ columns: 3 });
+        //$('.usergroupswide').columnize({ columns: 2 });
+    });
+
+    $.fn.cycle.defaults.speed   = 900;
+    $.fn.cycle.defaults.timeout = 6000;
+    $(function() {
+        // run the code in the markup!
+        $('#fade').cycle();
+    });
+</script>
+{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="bildspel" id="fade">
+        {% for image in slider %}
+            <img src="{{ image.url }}" alt="{{ image.title }}" height="271" width="940" />
+        {% endfor %}
+		</div>
+		<div class="index-header">
+			<p>
+				<h1>Learn <span class="green">+</span> Create <span class="green">+</span> Share</h1>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="twelvecol indexwide">
+			<p><strong>Igniting Inspiration in <i>IT</i></strong><br />
+            Born out of the desire to create a year round conference atmosphere,
+            Foo Café is THE place for meetings of all sizes, interests and levels
+            of expertise within the IT arena. Planned or spontaneous, it’s up to you.<br />
+            <br />
+            Foo Café is all about sharing and learning.<br />
+            <br />
+            <iframe width="290" height="163" src="http://www.youtube.com/embed/pfgjpQeExbo"
+                    frameborder="0" allowfullscreen></iframe><br />
+            <br />
+            Learn more about the Foo Café initiative. Our history, principles and
+            concept are described <a href="http://www.foocafe.org/index.php/describe">here</a>.
+            Of course you want to know.<br />
+            <br />
+            We look forward to igniting inspiration and creativity together.<br />
+            <br />
+            <em>Michael Tiberg - Founder </em>
+			</p>
+		</div>
+	</div>
+</div>
+{% endblock %}
+{% block google-analytics %}
+<!-- No Google analytics on this page -->
+{% endblock %}

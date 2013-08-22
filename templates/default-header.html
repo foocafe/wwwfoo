@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<div class="container">
+	<div class="row rela">
+		<div class="leftcoltop">
+			<p><a href="/"><img src="{% static 'images/logo_small.png' %}" alt=""></a></p>
+		</div>
+		<div class="menu">
+			<p>
+				<a href="{path='describe'}" class="menuitem">about</a>&nbsp;<span class="green">|</span>
+				<a href="{path='events'}" class="menuitem">events</a> <span class="green">|</span>
+				<a href="{path='previous_events'}" class="menuitem">previous events</a> <span class="green">|</span>
+				<a href="{path='usergroups'}" class="menuitem">usergroups</a> <span class="green">|</span>
+				<a href="{path='partners'}" class="menuitem">partners</a> <span class="green">|</span>
+				<a href="{path='location'}" class="menuitem">location</a> <span class="green">|</span>
+				<a href="{path='reflections'}" class="menuitem">reflections</a> <span class="green">|</span>
+				<a href="{path='newsletter'}" class="menuitem">newsletter</a> 
+			</p>
+		</div>
+		<div id="socialHeader">
+			<a href="http://www.facebook.com/FooCafe" target="_blank"><img src="{% static 'images/small_face.gif' %}" alt="Facebook" /></a>
+			<a href="http://twitter.com/_foocafe_" target="_blank"><img src="{% static 'images/small_twitt.gif' %}" alt="Twitter" /></a>
+			<a href="http://www.linkedin.com/company/foo-caf-" target="_blank"><img src="{% static 'images/small_link.gif' %}" alt="linked in" /></a>
+			<a href="http://www.foocafe.org/feed_events" target="_blank"><img src="{% static 'images/small_rss.gif' %}" alt="FooCafee - Events" /></a>
+		</div>
+	</div>
+</div>

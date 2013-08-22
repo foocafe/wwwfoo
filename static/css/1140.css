@@ -1,0 +1,232 @@
+/* CSS Resets */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+
+
+/* ==================================================================================================================== */
+/* 													 BASIC STUFF											  		    */
+/* ==================================================================================================================== */
+
+body {
+background-image:url('../images/bg_net.jpg');
+font-size:14px;
+font-family: Helvetica, Arial;
+}
+
+h1 {text-align:center; font-size:90px; font-family: "brandon-grotesque",sans-serif;font-style: normal;font-weight: 700;}
+
+h1.eventhead {line-height:100%;text-align:left; margin-top:10px;font-size:68px; font-family: "brandon-grotesque",sans-serif;font-style: normal;font-weight: 700;}
+
+h2 {font-family: "brandon-grotesque",sans-serif;font-style: normal;	font-weight: 400; font-size:28px;}
+h3 {font-family: "brandon-grotesque",sans-serif;font-style: normal;	font-weight: 400; font-size:24px;}
+h3.cat {padding:10px 10px 0 10px;}
+h4 { font-size:17px; }
+h5 {
+	text-align:center; 
+	font-size:11px;
+	padding-top:20px; 
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.container {}
+.container p {line-height: 100%;text-align: center;margin:0;}
+.row {width: 940px;margin: 0 auto;}
+.green {color:#388c42;}
+.rela {position:relative;}
+#socialHeader {position:absolute; top:10px; right:0;}
+#socialHeader img { margin-left:2px; }
+#socialHeader img:hover { opacity:0.4; filter:alpha(opacity=40); }
+
+/* ==================================================================================================================== */
+/* 													 LINKS												  		        */
+/* ==================================================================================================================== */
+
+a { text-decoration:underline; color:#000;}
+a:hover {color:#388c42;}
+ul.filterThis li a {text-decoration:none;}
+ul.filterThis li a:hover {color:#7f7f7f;}
+a.menuitem { text-decoration:none; font-size:15px;margin:0 2px;font-family: "open-sans",sans-serif;font-style: normal;font-weight: 400;}
+
+/* ==================================================================================================================== */
+/* 													 INCLUDES											  		        */
+/* ==================================================================================================================== */
+
+
+.row .leftcoltop {width: 100px; float: left;}
+.row .leftcoltop p {padding:26px 0 15px 15px;}
+.row .menu {width: 830px; margin-right:10px;float: left; height: 100px;}
+.row .menu p {text-align:right; padding:80px 0 0 0;}
+
+
+/* ==================================================================================================================== */
+/* 													 INDEX													  		    */
+/* ==================================================================================================================== */
+
+.row .bildspel {width: 940px;float: left;margin:20px 0 10px 0; overflow:hidden;}
+
+
+.row .index-header {width: 940px;float: left;}
+.row .indexwide p { line-height:120%; padding:0 10px 0 10px; text-align:justify; font-size:15px; }
+.row .indexwide .first p { 	padding:0 10px 0 0;}
+.row .indexwide .last p { 	padding:0 0 0 10px;}
+.row .indexwide .first.column { border-right:0px solid #e1e1e1; border-left:0px solid #e1e1e1;}
+.row .indexwide .last.column { border-left:0px solid #e1e1e1; border-right:0px solid #e1e1e1;}
+.row .indexwide .column { border-left:1px solid #e1e1e1; border-right:1px solid #e1e1e1; }
+.row .twelvecol {width: 940px;float: left;}
+
+ul.filters { border-top:2px solid #388c42; background-color:#fff; float:left; width:940px; height:59px; margin-bottom:20px; margin-top:30px;}
+ul.filters li { list-style: none; float:left; margin:10px 8px 0 10px; padding:10px 25px 0 10px; border-right:1px solid #e1e1e1;}
+ul.filters li.laster { margin:10px 0 0 10px; border-right:0px solid #bada55;}
+ul.filters li:first-child { margin:10px 10px 0 25px;}
+
+.shadowimgs {width:100%; height:8px; float:left;}
+.specialimg {position:absolute; top:10px;right:15px;}
+ul.filterThis { float:left; width:940px;}
+ul.filterThis li { position:relative; list-style: none; float:left; margin-bottom:16px; margin-left:8px; margin-right:7px;}
+ul.filterThis li .notspecial {width:220px; height:200px;}
+ul.filterThis li .specialEvent { width:455px; height:200px;}
+ul.filterThis li p {text-align:left;}
+table.catColor {width:100%; height:5px; font-size:3px;}
+
+.filters li .cat_nohold {float:left;height:30px;padding:2px 0 0 0;}
+.filters li .cat_hold {
+	background-image:url('/images/emptyHole.png'); 
+	background-repeat:no-repeat; 
+	float:left;
+	height:30px;
+	padding:1px 0 0 25px;
+	}
+.filters li .cat_one, table.catColor td.cat_one {background-color:#388c42;}
+.filters li .cat_two, table.catColor td.cat_two {background-color:#5eb8e5;}
+.filters li .cat_three, table.catColor td.cat_three {background-color:#e8d41a;}
+.filters li .cat_four, table.catColor td.cat_four {background-color:#f7941e;}
+.filters li .cat_five, table.catColor td.cat_five {background-color:#ed1f24;}
+
+table.event-holder {margin:0; padding:0;}
+p.date {padding:0 10px 10px 10px;font-size:12px;}
+p.tags {padding:10px;font-size:12px; border-top:1px solid #e5e5e5;float:left;width:20px;}
+p.taggs {padding:10px;font-size:12px; border-top:1px solid #e5e5e5;float:left;width:160px;color:#cccccc;}
+
+.list_title {font-size:16px;line-height:120%; font-style:italic;}
+	
+ul.filterThis li .specialEvent p.tags {padding:10px;font-size:12px; border-top:1px solid #e5e5e5;float:left;width:20px;}
+ul.filterThis li .specialEvent p.taggs {padding:10px;font-size:12px; border-top:1px solid #e5e5e5;float:left;width:395px;}
+
+.complementInfo {
+	background-color:#ffffff;
+	background-image:url('../../images/Complement_Info.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+}
+
+.fadeout {color:#ccc;}
+
+
+/* ==================================================================================================================== */
+/* 													 EVENTPAGE												  		    */
+/* ==================================================================================================================== */
+
+.row .event-header {width: 940px;float: left;text-align:left;padding-bottom:50px;}
+.row .event-header p {text-align:left;}
+.row .eventwide p { line-height:120%; padding:0 10px 0 10px; text-align:justify; font-size:15px; }
+.row .eventwide .first p { 	padding:0 10px 0 0;}
+.row .eventwide .last p { 	padding:0 0 0 10px;}
+.row .eventwide .first.column { border-right:0px solid #e1e1e1; border-left:0px solid #e1e1e1;}
+.row .eventwide .last.column { border-left:0px solid #e1e1e1; border-right:0px solid #e1e1e1;}
+.row .eventwide .column { border-left:1px solid #e1e1e1; border-right:1px solid #e1e1e1; }
+
+.row .event-headerv2 {width: 940px;float: left;text-align:left;padding-bottom:10px;}
+.row .event-headerv2 p {text-align:left;}
+
+.eventtime {float:left;background-color:#388c42; width:300px; margin-bottom:5px;}
+.eventtime p {margin:10px; color:#fff;}
+.eventshare {float:left;background-color:#fff; border-top:2px solid #388c42; width:300px; margin-bottom:20px;}
+.eventshare p {margin:10px 0 10px 9px;text-align:center;}
+.eventshare p img {margin-left:7px;}
+.eventshare p img:hover {opacity:0.6; filter:alpha(opacity=60); /* For IE8 and earlier */}
+
+.registration {width: 940px;float: left;text-align:left;padding-bottom:30px;padding-top:30px;}
+.registrationcoderdojo {width: 940px;float: left;text-align:left;padding-top:30px;}
+  #tickets {border-bottom:2px solid #388c42; float: left; clear: left; width: 100%; margin: 0; background-color:#fff;}
+  .cart {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+  }
+  .cart td, .cart th {
+    padding: 10px;
+    font-weight: bold;
+  }
+  .cart th {
+    padding: 10px;
+    width: 110px;
+    text-align: left;
+  }
+  .cart .price {text-align: right;}
+  .cart {}
+  .cart b {font-weight: normal;}
+
+
+
+/* ==================================================================================================================== */
+/* 													 USERGROUPS												  		    */
+/* ==================================================================================================================== */
+
+.row .usergroupswide p { line-height:120%; padding:0 10px 0 10px; text-align:justify; font-size:15px; }
+.row .usergroupswide .first p { padding:0 10px 0 0;}
+.row .usergroupswide .last p { 	padding:0 0 0 10px;}
+.row .usergroupswide .first.column { border-right:0px solid #e1e1e1; border-left:0px solid #e1e1e1;}
+.row .usergroupswide .last.column { border-left:0px solid #e1e1e1; border-right:0px solid #e1e1e1;}
+.row .usergroupswide .column { border-left:1px solid #e1e1e1; border-right:1px solid #e1e1e1; }
+.row .usercol {width: 620px;float: left;}
+.row .userContact { margin-left:20px; width: 280px; float: left; }
+.row .userContact p {text-align:left;padding-bottom:10px;}
+.row .userContact h2 {margin-bottom:15px;}
+.my_form { text-align:left; }
+
+
+/* ==================================================================================================================== */
+/* 													 subpages												  		    */
+/* ==================================================================================================================== */
+
+.break {width: 940px;float: left;text-align:left;padding-bottom:30px;margin-top:30px;border-top:2px solid #388c42;}
+.location {width:300px;text-align:left;line-height:120%; float:left;}
+.location p {text-align:left;line-height:18px;}
+.map {float:left; margin-left:20px;}
+.reflections {float:left;}
+.reflections p {width:610px;padding-right:10px;text-align:left;line-height:120%;float:left;border-right:1px solid #e1e1e1;}
+.reflections img {margin-left:10px;text-align:left;line-height:120%;float:left;}
+#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; } 
+
+/* ==================================================================================================================== */
+/* 													 SUPPORT & SPONSORS										  		    */
+/* ==================================================================================================================== */
+
+.row .supportsponsors {width: 940px;float: left;border-bottom:1px solid #dbdbdb;padding-bottom:40px;border-top:1px solid #dbdbdb;margin-top:35px;padding-top:30px;}
+.row .supportsponsors #support,
+.row .supportsponsors #sponsors {text-align:center;}
+.row .supportsponsors #support p,
+.row .supportsponsors #sponsors p {padding:0 40px 20px 40px;}
+.row .supportsponsors #support img,
+.row .supportsponsors #sponsors img {padding:5px 10px;}
+.row .supportsponsors #support a,
+.row .supportsponsors #sponsors a {text-decoration:none;}
+.row .supportsponsors #support a:hover,
+.row .supportsponsors #sponsors a:hover {opacity:0.6; filter:alpha(opacity=60); /* For IE8 and earlier */}
+
+/* ==================================================================================================================== */
+/* 													 FOOTER													  		    */
+/* ==================================================================================================================== */
+
+.row .footer {width: 940px;float: left;padding-bottom:40px;border-top:1px solid #dbdbdb;margin-top:5px;padding-top:10px;}
+.row .footer #f-contact,
+.row .footer #f-visit,
+.row .footer #f-follow {float:left;text-align:left;width:250px;}
+.row .footer #f-contact p,
+.row .footer #f-visit p,
+.row .footer #f-follow p {text-align:left;font-size:12px;line-height:140%;padding-left:10px;}
+.row .footer #wemade {float:right;text-align:right;width:150px;}
+
+

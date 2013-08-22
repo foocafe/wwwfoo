@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="row">
+		<div class="supportsponsors">
+			<div id="support">
+				<p>
+					<h2>- {Premium Partners} -</h2>
+					<br />
+                    {% for p in partners.premium %}
+                    <a href="{{ p.url }}" title="{{ p.name }}"><img src="{{ p.image_url }}"/></a>
+                    {% endfor %}
+				</p>
+				<p>
+					<h2>- {Partners} -</h2>
+					<br />
+                    {% for p in partners.partner %}
+                    <a href="{{ p.url }}" title="{{ p.name }}"><img src="{{ p.image_url }}"/></a>
+                    {% endfor %}
+				</p>
+				<p>
+					<h2>- {Supported by} -</h2>
+					<br />
+                    {% for p in partners.supporter %}
+                    <a href="{{ p.url }}" title="{{ p.name }}"><img src="{{ p.image_url }}"/></a>
+                    {% endfor %}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
